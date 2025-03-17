@@ -52,6 +52,21 @@ describe('AppComponent', () => { // test suite
     expect(app.cars).toContain('maruti');
   });
 
+  it('should verify fetchData function', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    // Spy on processData,  callThrough() ensures the original implementation still runs
+    spyOn(app, 'processData').and.callThrough();
+
+    // Call fetchData
+    const result = app.fetchData();
+
+    // Assertions
+    expect(app.processData).toHaveBeenCalled(); // Verify processData was called
+    expect(app.processData).toHaveBeenCalledWith(['item1', 'item2', 'item3']); // Verify correct arguments
+    expect(result).toBe(3); // Verify the return value
+  });
+
 
   beforeAll(() => { // 1
     console.log('Before All...');

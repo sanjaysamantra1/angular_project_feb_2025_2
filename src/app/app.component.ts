@@ -25,4 +25,13 @@ export class AppComponent {
   addNewcar(car: string) {
     this.cars.push(car);
   }
+
+  processData(data: any) {
+    console.log('Processing data:', data);
+    return data.length;
+  }
+  fetchData() {
+    const data = ['item1', 'item2', 'item3'];
+    return this.processData(data);
+  }
 }
