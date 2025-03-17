@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="row">
+        <h1 class="text-center">Let's learn Angular Material</h1>
+        <mat-divider></mat-divider>
+
+        <div class="border p-2 mt-2">
+            <h3>Let's learn Material Buttons:</h3>
+
+            <button mat-raised-button>Raised Button</button>
+            <button mat-stroked-button class="mx-2">Stroked Button</button>
+            <button mat-flat-button>Flat Button</button>
+        </div>
+        <div class="border p-2 mt-2">
+            <h3>Let's learn card:</h3>
+
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <div>Bootstrap Card</div>
+                    <div class="card col-sm-6">
+                        <img width="150" height="200"
+                            src="https://material.angular.io/assets/img/examples/shiba1.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Name: Sanjay Kumar</h5>
+                            <p class="card-text">Address: Bangalore</p>
+                            <p class="card-text">Phone: 9861216682</p>
+                            <p class="card-text">Email: sanjay&#64;gmail.com</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div>Angular Material Card:</div>
+                    <mat-card class="example-card" appearance="outlined">
+                        <mat-card-header>
+                            <div mat-card-avatar class="example-header-image"></div>
+                            <mat-card-title>Shiba Inu</mat-card-title>
+                            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                            alt="Photo of a Shiba Inu">
+                        <mat-card-content>
+                            <p>
+                                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from
+                                Japan.
+                                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
+                                originally
+                                bred for hunting.
+                            </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button mat-button>LIKE</button>
+                            <button mat-button>SHARE</button>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
