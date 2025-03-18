@@ -1,0 +1,9 @@
+<h3 class="text-center">This is Counter Component using NGRX</h3>
+
+<div class="border p-2 text-center col-sm-4 offset-4">
+    <h3>Count Value is: {{count$ | async}}</h3>
+
+    <button class="btn btn-warning mx-1" (click)="decrement()">Decrement</button>
+    <button class="btn btn-danger mx-1" (click)="reset()">Reset</button>
+    <button class="btn btn-primary mx-1" (click)="increment()">Increment</button>
+</div>
